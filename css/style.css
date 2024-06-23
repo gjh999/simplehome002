@@ -1,0 +1,90 @@
+@charset "utf-8";
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+img {max-width: 100%; vertical-align: top;}
+table {width: 100%;border-collapse: collapse;}
+button {cursor: pointer;}
+body {background: #fff; color: #333;}
+
+/*wrap*/
+.wrap {position: relative; }
+/* inner */
+.inner {width: 1200px; margin: 0 auto;}
+
+/*header*/
+header { position: relative; height: 100px; background: #fff; padding-top: 20px; padding-left: 10px;}
+header h1 {width: 250px; height: 40px;}
+header h1 a {display: block;}
+nav {position: absolute; top: 40px; right: 0; z-index: 5;}
+nav > ul > li {float: left;}
+nav > ul > li > a {display: block; width: 200px; background: #fff; text-align: center; 
+font-weight: bold; color: #ceb398; padding: 10px;}
+nav > ul > li:hover > a {color: #333; background: #ceb398; font-size: 14px; font-weight: bold;}
+nav > ul > li:hover .sub {display: block;}
+.sub {display: none;}
+.sub li a {background: #fff; display: block; padding: 5px; text-align: center; font-size: 14px;}
+.sub li a:hover {background: #f3e2d2;}
+
+/*content*/
+.content {background: #369}
+.slide {position: relative; height: 500px; background: #ccc; overflow: hidden;}
+/*.slide ul {position: absolute; top: 0; left: 0;height: 900px;}*/
+.slide ul {position: absolute; top: 0; left: 0;height: 1500px;}
+.slide ul li {position: relative; width: 1200px; height: 500px;}
+.slide ul li.s1 {background: url(../images/main_bg.jpg) no-repeat center/cover;}
+.slide ul li.s2 {background: url(../images/gallery2.jpg) no-repeat center/cover;}
+.slide ul li.s3 {background: url(../images/gallery3.jpg) no-repeat center/cover;}
+.slide ul li p {background: #ceb398; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px;
+     border-radius: 50px;font-size: 30px; font-weight: bold;}
+
+.con {height: 200px; background:  #369; display: flex;}
+.con article {width: 400px;}
+.con article:nth-child(2) {background: #369;}
+
+.con1 {position: relative;}
+.con1 .tabmenu {display: flex;}
+.con1 .tabmenu > li {width: 200px; background: #ceb398;}
+.con1 .tabmenu > li.on {background: #6a4826; color: #fff;}
+.con1 .tabmenu > li > h2 > a { display: block; text-align: center; padding: 10px 0; font-weight: bold; font-size: 20px;}
+.con1 .tabcon {position: absolute; left: 0; width: 100%; height: 150px;}
+
+.notice {padding-top: 10px;}
+.notice th {text-align: left; color: #fff;}
+.notice td {color: #fff;}
+.notice tr {border-bottom: 1px dashed #fff;}
+.notice a {padding: 5px; display: block; width: 300px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.notice a:hover {color: #ceb398;}
+
+.gall {padding-top: 30px; display: none; height:400px;}
+.gall ul {display: flex; gap: 10px;}
+
+.con2 {padding: 10px;}
+.con2 a {display: block; height: 100%; background: url(../images/main_bg.jpg) center/cover; border-radius: 30px; text-align: center; overflow: hidden;}
+.con2 div {background: rgba(206,179,152,.8);height: 100%; padding-top: 20px;}
+.con2 h2 {margin-bottom: 10px;}
+.con2 p {background: #333; color: #fff; display: inline-block; font-size: 13px; margin-top: 20px;}
+
+.con3 {padding: 10px;}
+.con3 h2 {color: #ceb398; margin-bottom: 20px;}
+.con3 ul {display: flex; text-align: center; gap: 20px; justify-content: center;}
+.con3 ul li {display: block; height: 100%;}
+.con3 ul li {width: 100px; height: 100px; background: #ceb398; padding-top: 10px; border-radius: 20px;}
+.con3 ul li span {margin-top: 15px; display: block; font-weight: bold; color: #fff;}
+
+/*footer*/
+footer {height: 100px; background: #333; color: #fff; position: relative; padding-top: 10px; padding-left: 10px; display: flex; gap: 20px;}
+footer .fcopy {padding-top: 10px;}
+.fsns {display: flex; gap: 10px; position: absolute; top: 30px; right: 30px;}
+.fsns li a {display: block; width: 30px; height: 30px; background: #fff; border-radius: 50%; text-align: center; padding-top: 0px;}
+.fsns li:nth-child(1) a {background: #3f5b9a;}
+.fsns li:nth-child(2) a {background: #47b749;}
+.fsns li:nth-child(3) a {background: red;}
+
+/*popup*/
+.popup {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; padding: 20px; width: 450px; background: #fff; z-index: 100; display: none;}
+.popup h2 {color: #ceb398; margin-bottom: 20px;}
+.popup .text {margin: 20px 0;}
+.popup .btn {text-align: center; margin-top: 10px;}
+.popup .close {border: 0; padding: 20px; background: #ceb398; color: #fff;}
+.popup .colse:hover {background: #212121;}
